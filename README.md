@@ -74,10 +74,16 @@ yarn lint:fix
 
 ## Build with
 
-- [cra](https://create-react-app.dev)
-- [react](https://reactjs.org)
-- [styled-components](https://www.styled-components.com)
-- [typescript](https://www.typescriptlang.org)
+- [cra](https://create-react-app.dev) - Most common boilerplate to start react
+  projects
+- [styled-components](https://www.styled-components.com) - Custom UI components
+  with props based on scales
+- [styled-system](https://styled-system.com) - Collection of functions to add
+  style props to components
+- [typescript](https://www.typescriptlang.org) - JavaScript extention to add
+  types to the language
+- [cypress](https://www.cypress.io/) - Created to easily test end to end
+  front-end
 
 ## Author
 
