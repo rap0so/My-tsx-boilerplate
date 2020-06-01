@@ -8,14 +8,15 @@ import {
 } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
+import Loading from 'components/Loading';
 import apolloClient from 'helpers/apolloClient';
-import theme from 'providers/theme';
+import theme, { GlobalStyle } from 'providers/theme';
 
 const App = () => (
   <ApolloProvider client={apolloClient}>
     <ThemeProvider theme={theme}>
-      {/* TODO: Add loader as fallback */}
-      <Suspense fallback={<div />}>
+      <GlobalStyle />
+      <Suspense fallback={<Loading full={true} />}>
         <Router>
           <Switch>
             <Route path="/" component={lazy(() => import('pages/home'))} />
