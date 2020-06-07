@@ -87,12 +87,17 @@ yarn lint:fix
 
 ## Author
 
-👤 **William G.**
+🦊 **William G.**
 
-- Website: https://www.linkedin.com/in/william-godoy-4bb919b5/
 - Github: [@rap0so](https://github.com/rap0so)
 - LinkedIn:
   [@william-godoy-4bb919b5](https://linkedin.com/in/william-godoy-4bb919b5)
+  
+😎 **Lucas S.**
+
+- Github: [@luqezman](https://github.com/luqezman)
+- LinkedIn:
+  [@luqezman](https://www.linkedin.com/in/luqezman/)
 
 ## 📝 License
 
