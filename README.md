@@ -85,6 +85,10 @@ yarn lint:fix
 - [cypress](https://www.cypress.io/) - Created to easily test end to end
   front-end
 
+## TODO
+
+- [] Add storybook
+
 ## Author
 
 🦊 **William G.**
