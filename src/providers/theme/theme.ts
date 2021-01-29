@@ -1,28 +1,53 @@
-import { TTheme } from './types';
+import { Theme } from 'theme-ui';
 
 const colors = {
+  background: '#fff',
   configuration: '#39b2c2',
   greyBackground: '#F8F8F9',
-  greyText: '#404040',
   negative: '#cd3636',
   positive: '#A4FF0E',
+  text: '#404040',
   yellowBackground: '#F9E39E',
 };
 
-const numberFromZeroToHundred = [...Array(21)].map((_, idx) => idx * 5);
-
-const theme: TTheme = {
+const theme: Theme = {
   colors,
-  boxShadow: '0 1px 4px -1px #808080',
-  spaces: numberFromZeroToHundred,
-  texts: {
+  breakpoints: ['1100px'],
+  //     [0, 1, 2,  3,  4,  5,  6,  7,  8,  9,   10],
+  fontWeights: {
+    bold: 600,
+    default: 400,
+    semibold: 500,
+    thin: 300,
+  },
+  space: [0, 5, 10, 12, 20, 25, 30, 40, 50, 100, 155],
+  styles: {
+    root: {
+      '#root': {
+        minHeight: '100vh',
+      },
+      '*': {
+        color: 'text',
+        fontFamily: 'default',
+        margin: 0,
+      },
+      code: {
+        fontFamily:
+          'source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace',
+      },
+      fontFamily: 'default',
+      fontWeight: 'default',
+      minHeight: '100vh',
+      outline: 'none',
+      textDecoration: 'none',
+    },
+  },
+  text: {
     normal: {
-      color: colors.greyText,
       fontSize: '18px',
       fontWeight: 'normal',
     },
     title: {
-      color: colors.greyText,
       fontSize: '20px',
       fontWeight: 'bold',
     },
