@@ -1,7 +1,5 @@
-import React, { FC } from 'react';
-
-const Home: FC = () => {
-  return <>Home</>;
+const Home = () => {
+  return <>vai vei</>;
 };
 
 export default Home;
