@@ -6,24 +6,46 @@
   </a>
 </p>
 
-> Simple typescript web application boilerplate
+> Typescript web application boilerplate
 
-### 🏠 [Homepage](https://github.com/rap0so/tsx-boilerplate)
+## How to run?
 
-## Install
+You can run it by using docker, docker-compose or your local environment:
+
+### Configure keys
+
+```sh
+cp .env.example .env
+nano .env
+```
+
+### Using Docker?
+
+To build the image:
+```sh
+docker build -t [your-tagname-here] .
+```
+
+To run the image:
+```sh
+docker run -it --rm -v ${PWD}:/app -v /app/node_modules \
+  -p [your-configured-port-here]:[your-configured-port-here] \
+  -e CHOKIDAR_USEPOLLING=true \
+  [your-tagname-here]
+```
+
+### Using Docker compose?
+
+```sh
+docker-compose up --build
+```
+### Install
 
 ```sh
 yarn install
 ```
 
-## Configure keys
-
-```sh
-cp .env.example .env.local
-nano .env.local
-```
-
-## Usage
+## Local usage
 
 ```sh
 yarn start
@@ -96,12 +118,6 @@ built with Styled System
 - LinkedIn:
   [@william-godoy-4bb919b5](https://linkedin.com/in/william-godoy-4bb919b5)
   
-😎 **Lucas S.**
-
-- Github: [@luqezman](https://github.com/luqezman)
-- LinkedIn:
-  [@luqezman](https://www.linkedin.com/in/luqezman/)
-
 ## 📝 License
 
 Copyright © 2020 [William G.](https://github.com/rap0so).<br /> This project is
