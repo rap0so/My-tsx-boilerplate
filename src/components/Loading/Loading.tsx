@@ -1,19 +1,17 @@
-import { FC } from 'react';
 import { BarLoader } from 'react-spinners';
 
-import loadingWrapperStyle from './loadingWrapperStyle';
 import { TLoadingProps } from './types';
-import { Box, Flex } from 'rebass';
+import { Box, Flex } from '@chakra-ui/react';
 
-const Loading: FC<TLoadingProps> = ({ full }) =>
+const Loading = ({ full }: TLoadingProps) =>
   full ? (
     <Flex
       alignItems="center"
       data-testid="full"
-      display="flex"
       justifyContent="center"
       height="100%"
-      style={loadingWrapperStyle}
+      inset="0"
+      position="fixed"
     >
       <BarLoader color="#fff" />
     </Flex>
