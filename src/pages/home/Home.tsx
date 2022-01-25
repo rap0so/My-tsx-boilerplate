@@ -1,4 +1,4 @@
-const Home = () => {
+const Home = (test) => {
   return <>vai vei</>;
 };
 
